@@ -1,0 +1,91 @@
+[
+  {
+    "elements": [
+      {
+        "id": "sign-in-feature;sign-in-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Sign In with valid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "The user arrives on the welcome page",
+            "result": {
+              "status": "passed",
+              "duration": 9188626348
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:27"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I Sign In with credentials sara_nascimento@hotmail.com and Bonjour3",
+            "result": {
+              "status": "passed",
+              "duration": 723261847
+            },
+            "line": 9,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:13"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be redirected to order page",
+            "result": {
+              "status": "passed",
+              "duration": 1673694879
+            },
+            "line": 10,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I should be successfully authenticated as Sara Gomes",
+            "result": {
+              "status": "passed",
+              "duration": 116825901
+            },
+            "line": 11,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 270585119
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/runtime/world.js:275"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sign_in_valid_informations",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sign-in-feature",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Sign In feature",
+    "tags": [],
+    "uri": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/features/sign_in.feature"
+  }
+]
