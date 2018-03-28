@@ -1,0 +1,15 @@
+{
+  "Details" : {
+    "Name": "Chauffeur Privé Automated Testing Tool",
+    "Created by": "Sara Gomes"
+  },
+
+  "auth":{
+    "host": "domain.com",
+    "user": "userEmail",
+    "pass": "password"
+  },
+
+  "nameList": "QA Analyst <sarahnanete@yahoo.com>, Me <sara_nascimento@hotmail.com>"
+}
+
