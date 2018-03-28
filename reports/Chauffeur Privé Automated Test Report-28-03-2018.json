@@ -4,7 +4,7 @@
       {
         "id": "sign-in-feature;sign-in-with-valid-credentials",
         "keyword": "Scenario",
-        "line": 14,
+        "line": 15,
         "name": "Sign In with valid credentials",
         "steps": [
           {
@@ -13,24 +13,37 @@
             "name": "The user arrives on the welcome page",
             "result": {
               "status": "passed",
-              "duration": 9188626348
+              "duration": 10365497867
             },
             "line": 4,
             "match": {
-              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:27"
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:3"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I Sign In with credentials sara_nascimento@hotmail.com and Bonjour3",
+            "name": "I go to Sign In page",
             "result": {
               "status": "passed",
-              "duration": 723261847
+              "duration": 430622528
             },
             "line": 9,
             "match": {
-              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:13"
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I Sign In with credentials sara_nascimento@hotmail.com and Bonjour3",
+            "result": {
+              "status": "passed",
+              "duration": 763184428
+            },
+            "line": 10,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:11"
             }
           },
           {
@@ -39,11 +52,11 @@
             "name": "I should be redirected to order page",
             "result": {
               "status": "passed",
-              "duration": 1673694879
+              "duration": 2019170893
             },
-            "line": 10,
+            "line": 11,
             "match": {
-              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:23"
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:19"
             }
           },
           {
@@ -52,11 +65,11 @@
             "name": "I should be successfully authenticated as Sara Gomes",
             "result": {
               "status": "passed",
-              "duration": 116825901
+              "duration": 39154780
             },
-            "line": 11,
+            "line": 12,
             "match": {
-              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:18"
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:15"
             }
           },
           {
@@ -64,7 +77,7 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 270585119
+              "duration": 154010794
             },
             "hidden": true,
             "match": {
@@ -76,6 +89,228 @@
           {
             "name": "@sign_in_valid_informations",
             "line": 6
+          },
+          {
+            "name": "@automated",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "sign-in-feature;unsuccesfull-sign-in-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Unsuccesfull Sign In with invalid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "The user arrives on the welcome page",
+            "result": {
+              "status": "passed",
+              "duration": 7841933579
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I go to Sign In page",
+            "result": {
+              "status": "passed",
+              "duration": 3957984361
+            },
+            "line": 20,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I Sign In with credentials invalid_email@hotmail.com and Bonjour1234!",
+            "result": {
+              "status": "passed",
+              "duration": 725202212
+            },
+            "line": 21,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should not be authenticated",
+            "result": {
+              "status": "passed",
+              "duration": 135399
+            },
+            "line": 22,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "an error should appear on Sign In form \"Incorrect credentials. Please check and try again.\"",
+            "result": {
+              "status": "passed",
+              "duration": 550987436
+            },
+            "line": 23,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:27"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I should stay on Sign In page",
+            "result": {
+              "status": "passed",
+              "duration": 12826203
+            },
+            "line": 24,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:31"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 149876376
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/runtime/world.js:275"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sign_in_invalid_credentials",
+            "line": 17
+          },
+          {
+            "name": "@automated",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "id": "sign-in-feature;unsuccesfull-sign-in-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Unsuccesfull Sign In with invalid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "The user arrives on the welcome page",
+            "result": {
+              "status": "passed",
+              "duration": 8996020623
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I go to Sign In page",
+            "result": {
+              "status": "passed",
+              "duration": 3946034635
+            },
+            "line": 20,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I Sign In with credentials sara_nascimento@hotmail.com and invalidPassword",
+            "result": {
+              "status": "passed",
+              "duration": 748993103
+            },
+            "line": 21,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should not be authenticated",
+            "result": {
+              "status": "passed",
+              "duration": 145325
+            },
+            "line": 22,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "an error should appear on Sign In form \"Incorrect credentials. Please check and try again.\"",
+            "result": {
+              "status": "passed",
+              "duration": 555235468
+            },
+            "line": 23,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:27"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I should stay on Sign In page",
+            "result": {
+              "status": "passed",
+              "duration": 12493030
+            },
+            "line": 24,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:31"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 139031944
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/runtime/world.js:275"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sign_in_invalid_credentials",
+            "line": 17
+          },
+          {
+            "name": "@automated",
+            "line": 18
           }
         ],
         "type": "scenario"
@@ -87,5 +322,137 @@
     "name": "Sign In feature",
     "tags": [],
     "uri": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/features/sign_in.feature"
+  },
+  {
+    "elements": [
+      {
+        "id": "sign-out-feature;an-authenticated-user-can-be-able-to-sign-out",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "An authenticated user can be able to sign out",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "The user arrives on the welcome page",
+            "result": {
+              "status": "passed",
+              "duration": 9502497484
+            },
+            "line": 4,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I go to Sign In page",
+            "result": {
+              "status": "passed",
+              "duration": 415080595
+            },
+            "line": 5,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:7"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I Sign In with credentials sara_nascimento@hotmail.com and Bonjour3",
+            "result": {
+              "status": "passed",
+              "duration": 714900493
+            },
+            "line": 6,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should be redirected to order page",
+            "result": {
+              "status": "passed",
+              "duration": 1614265461
+            },
+            "line": 7,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:19"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "name": "I should be successfully authenticated as Sara Gomes",
+            "result": {
+              "status": "passed",
+              "duration": 47926611
+            },
+            "line": 8,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:15"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I try to Sign Out",
+            "result": {
+              "status": "passed",
+              "duration": 879706799
+            },
+            "line": 13,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signOut-steps.js:3"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "I should not be authenticated",
+            "result": {
+              "status": "passed",
+              "duration": 102150
+            },
+            "line": 14,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/step-definitions/signIn-steps.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 285930379
+            },
+            "hidden": true,
+            "match": {
+              "location": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/runtime/world.js:275"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sign_out",
+            "line": 10
+          },
+          {
+            "name": "@automated",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sign-out-feature",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Sign Out feature",
+    "tags": [],
+    "uri": "/home/sara/sources/chauffeur_prive/chauffeur_prive_tests/features/sign_out.feature"
   }
 ]
