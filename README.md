@@ -27,7 +27,7 @@ selenium-standalone start
 ## Usage
 
 ```bash
-node index.js -d -t @automated
+node index.js -d -b firefox -t @automated
 ```
 
 ### Options
