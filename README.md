@@ -1,6 +1,6 @@
 # Chauffeur Privé Tests
 
-Those scripts implements automated tests for Chauffeur Privée End to End Web application scenarios. These tests is implemented on Cucumber.js and WebDriverIO.
+These project implements automated tests for Chauffeur Privée End to End Web application scenarios. These tests is implemented on Cucumber.js and WebDriverIO.
 
 # webdriverio-cucumber-js 
 
