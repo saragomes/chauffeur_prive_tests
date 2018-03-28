@@ -9,6 +9,7 @@ module.exports = {
       email3Txt: '//input[@id="email-3"]',
       pwd4Txt: '//input[@id="password-4"]',
       submitBtn: '.sc-jAaTju.dmqFvx',
+      errorsLbl: '.sc-lhVmIH.cljhVd',
   },
 
   performSignIn: function (email, password) {
@@ -24,7 +25,16 @@ module.exports = {
 
   waitForAuthentication: function () {
     /** Wait until username appears and order page is completed charged */
-    return driver.waitForExist(page.order.elem.usernameLink, 10000);
+    return driver.waitForExist(page.order.elem.usernameLink, 10000).then(function () {
+      //expect(url).to.equal(first_name + ' ' + last_name);
+    });
+  },
+
+  stayOnSignInPage: function () {
+    /** stay on Sign In page */
+    return driver.waitForExist(page.signIn.elem.email3Txt, 10000).then(function () {
+      //expect(url).to.equal(first_name + ' ' + last_name);
+    });
   },
 
   AuthenticationResult: function (first_name, last_name) {
@@ -32,6 +42,15 @@ module.exports = {
     return driver.getAttribute(page.order.elem.usernameLink, 'innerText').then(function (username) {
       expect(username).to.equal(first_name + ' ' + last_name);
     });
-  }
+  },
+
+  displayError: function (errorMessage) {
+    /** return the promise the identified correspond to the first and last user names */
+    return driver.waitForExist(page.signIn.elem.errorsLbl, 10000).then(function () {
+      return driver.getAttribute(page.signIn.elem.errorsLbl, 'innerText').then(function (error) {
+        expect(error).to.equal(errorMessage);
+      });
+    });
+  },
     
 };

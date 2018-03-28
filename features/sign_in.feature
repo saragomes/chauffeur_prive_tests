@@ -20,8 +20,8 @@ Scenario Outline: Unsuccesfull Sign In with invalid credentials
 	When I go to Sign In page
 		And I Sign In with credentials <email> and <password>
 	Then I should not be authenticated
-		And an error should appear on Sign In form "Les identifiants que vous avez rentrés ne sont pas corrects. Veuillez vérifier et réessayer."
-		And I should not be redirected to order page
+		And an error should appear on Sign In form "Incorrect credentials. Please check and try again."
+		And I should stay on Sign In page
 	Examples:
 		| email | password |
 		| invalid_email@hotmail.com | Bonjour1234! |

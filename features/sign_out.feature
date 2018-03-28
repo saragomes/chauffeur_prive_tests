@@ -12,4 +12,3 @@ Background:
 Scenario: An authenticated user can be able to sign out
 	When I try to Sign Out
 	Then I should not be authenticated
-		And I should be redirected to Sign In page
